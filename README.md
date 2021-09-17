@@ -37,13 +37,11 @@ Use the method `.get_info()` on `NineLevelDialect` to get all the information:
      '撒奇萊雅語',
      '雅美語',
      '南王卑南語',
-      ...
-     '南勢阿美語',
-     '海岸阿美語',
-     '馬蘭阿美語',
-     '恆春阿美語',
-     '賽夏語',
-     '拉阿魯哇語']
+     '知本卑南語',
+     '西群卑南語',
+     '建和卑南語',
+     '鄒語',
+     ...]
     ``` 
     
 ### 3. Fill in and instantiate `NineLevel` class: 
