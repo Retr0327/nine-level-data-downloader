@@ -42,8 +42,14 @@ async def download_data(url) -> Awaitable[Dict[str, Any]]:
     """
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as response:
-            html = await response.json() 
-            return html
+            while True:
+                try:
+                    html = await response.json(encoding="utf-8", content_type=None)
+                    return html
+                    break
+                except json.decoder.JSONDecodeError:
+                    continue
+
 
 
 # --------------------------------------------------------------------
